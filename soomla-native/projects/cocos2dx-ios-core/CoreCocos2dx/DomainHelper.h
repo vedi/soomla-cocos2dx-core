@@ -6,6 +6,8 @@
 
 @interface DomainHelper : NSObject
 + (id)sharedDomainHelper;
+- (void) registerType: (NSString *)type withClassName: (NSString *)className;
 - (id) getDomainsFromDictList: (NSArray *)dictList;
 - (id) getDictListFromDomains: (NSArray *)domains;
+- (NSDictionary *) domainToDict: (NSObject *)domain;
 @end
