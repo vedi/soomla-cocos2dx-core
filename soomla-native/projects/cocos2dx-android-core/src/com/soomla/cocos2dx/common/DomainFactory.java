@@ -41,7 +41,7 @@ public class DomainFactory {
 
     @SuppressWarnings("unchecked")
     public <T>T createWithJsonObject(JSONObject jsonObject) {
-        String type = jsonObject.optString(CommonJsonConsts.BP_TYPE, null);
+        String type = jsonObject.optString(CommonConsts.BP_TYPE, null);
         if (type == null) {
             throw new IllegalArgumentException();
         }
