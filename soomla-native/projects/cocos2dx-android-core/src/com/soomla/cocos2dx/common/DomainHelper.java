@@ -68,7 +68,7 @@ public class DomainHelper {
         try {
             Method method = domain.getClass().getMethod("toJSONObject");
             final JSONObject jsonObject = (JSONObject) method.invoke(domain);
-            String type = jsonObject.optString(CommonConsts.BP_TYPE, "");
+            String type = jsonObject.optString(CommonConsts.BP_TYPE, null);
             if (type == null) {
                 type = classTypeMap.get(domain.getClass().getName());
                 jsonObject.put(CommonConsts.BP_TYPE, type);
