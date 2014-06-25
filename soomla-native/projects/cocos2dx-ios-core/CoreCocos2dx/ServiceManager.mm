@@ -3,7 +3,8 @@
 //
 
 #import "ServiceManager.h"
-#import "ProfileService.h"
+#import "NdkGlue.h"
+#import "ParamsProvider.h"
 
 
 @interface ServiceManager ()
@@ -27,6 +28,11 @@
     self = [super init];
     if (self) {
         _services = [NSMutableArray array];
+
+        [[NdkGlue sharedInstance] registerCallHandlerForKey:@"CCServiceManager::setCommonParams" withBlock:^(NSDictionary *parameters, NSMutableDictionary *retParameters) {
+            NSDictionary *commonParameters = (NSDictionary *) [parameters objectForKey:@"params"];
+            [[ParamsProvider sharedParamsProvider] setParams: commonParameters withKey: @"common"];
+        }];
     }
 
     return self;
