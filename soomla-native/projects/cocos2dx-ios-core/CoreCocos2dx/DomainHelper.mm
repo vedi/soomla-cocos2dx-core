@@ -82,7 +82,6 @@
         [mutableDictionary setObject:type forKey:JSON_JSON_TYPE];
         return mutableDictionary;
     }
-    
 }
 
 - (void)dealloc {
