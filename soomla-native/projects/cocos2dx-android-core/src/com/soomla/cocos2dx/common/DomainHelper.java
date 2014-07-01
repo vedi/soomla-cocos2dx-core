@@ -3,6 +3,7 @@ package com.soomla.cocos2dx.common;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
@@ -33,9 +34,21 @@ public class DomainHelper {
         return INSTANCE;
     }
 
-    public void registerTypeWithClassName(String type, String className) {
-        typeClassMap.put(type, className);
-        classTypeMap.put(className, type);
+    public <T> void registerTypeWithClassName(String type, final Class<T> clazz) {
+        typeClassMap.put(type, clazz.getName());
+        classTypeMap.put(clazz.getName(), type);
+
+        DomainFactory.getInstance().registerCreator(type, new DomainFactory.Creator<T>() {
+            @Override
+            public T create(JSONObject jsonObject) {
+                try {
+                    final Constructor<T> constructor = clazz.getConstructor(JSONObject.class);
+                    return constructor.newInstance(jsonObject);
+                } catch (Exception e) {
+                    throw new IllegalStateException(e);
+                }
+            }
+        });
     }
 
     public <T> List<T> getDomainsFromJsonObjectList(List<JSONObject> jsonObjectList, String type) {
