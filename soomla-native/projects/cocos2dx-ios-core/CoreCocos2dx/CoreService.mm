@@ -6,13 +6,13 @@
 #import "NdkGlue.h"
 #import "Reward.h"
 #import "DomainFactory.h"
-#import "SoomlaProfile.h"
 #import "UserProfileEventHandling.h"
-#import "ProviderNotFoundException.h"
-#import "UserProfile.h"
-#import "DomainHelper.h"
-#import "UserProfileNotFoundException.h"
 #import "SoomlaEventHandling.h"
+#import "CommonConsts.h"
+#import "BadgeReward.h"
+#import "RandomReward.h"
+#import "SequenceReward.h"
+#import "DomainHelper.h"
 
 @interface CoreService ()
 @end
@@ -33,8 +33,8 @@
 + (void)initialize {
     [super initialize];
     [self initGlue];
+    [self initCreators];
 }
-
 
 - (id)init {
     self = [super init];
@@ -66,6 +66,15 @@
         [parameters setObject:[reward toDictionary] forKey:@"reward"];
     }];
 
+}
+
++ (void)initCreators {
+    [[DomainHelper sharedDomainHelper] registerType:(NSString *) JSON_JSON_TYPE_BADGE
+                                      withClassName:NSStringFromClass([BadgeReward class])];
+    [[DomainHelper sharedDomainHelper] registerType:(NSString *) JSON_JSON_TYPE_RANDOM
+                                      withClassName:NSStringFromClass([RandomReward class])];
+    [[DomainHelper sharedDomainHelper] registerType:(NSString *) JSON_JSON_TYPE_SEQUENCE
+                                      withClassName:NSStringFromClass([SequenceReward class])];
 }
 
 @end

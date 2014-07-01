@@ -2,10 +2,9 @@
 // Created by Fedor Shubin on 6/11/14.
 //
 
-#import <MacTypes.h>
 #import "DomainHelper.h"
 #import "DomainFactory.h"
-#import "CommonJsonConsts.h"
+#import "CommonConsts.h"
 
 
 @interface DomainHelper ()
@@ -36,10 +35,16 @@
     return self;
 }
 
-
 - (void)registerType:(NSString *)type withClassName:(NSString *)className {
-    [self.classType setObject:type forKey:className];
-    [self.typeClass setObject:className forKey:type];
+    self.classType[className] = type;
+    self.typeClass[type] = className;
+
+    Class clazz = NSClassFromString(className);
+
+    id (^creator)(NSDictionary *) = ^id(NSDictionary *dict) {
+        return [clazz performSelector:@selector(fromDictionary:) withObject:dict];
+    };
+    [[DomainFactory sharedDomainFactory] registerCreatorForKey:type withBlock:creator];
 }
 
 - (id)getDomainsFromDictList:(NSArray *)dictList {

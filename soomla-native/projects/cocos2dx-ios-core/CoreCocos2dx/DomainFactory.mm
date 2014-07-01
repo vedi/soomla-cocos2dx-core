@@ -3,7 +3,7 @@
 //
 
 #import "DomainFactory.h"
-#import "CommonJsonConsts.h"
+#import "CommonConsts.h"
 
 
 @interface DomainFactory ()
@@ -34,7 +34,7 @@
 }
 
 - (void)registerCreatorForKey:(NSString *)key withBlock:(id (^)(NSDictionary *dict))creator {
-    [_creators setValue:creator forKey:key];
+    [_creators setValue:Block_copy(creator) forKey:key];
 }
 
 - (id)createWithDict:(NSDictionary *)dict {
