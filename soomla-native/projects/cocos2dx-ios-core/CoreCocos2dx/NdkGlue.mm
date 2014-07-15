@@ -17,11 +17,12 @@
 static NSString* TAG = @"SOOMLA NdkGlue";
 
 + (NdkGlue *)sharedInstance {
-    static NdkGlue * instance = nil;
-    if (!instance) {
-        instance = [[NdkGlue alloc] init];
-    }
-    return instance;
+    static NdkGlue *sharedInstance = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedInstance = [[self alloc] init];
+    });
+    return sharedInstance;
 }
 
 - (id)init {
@@ -118,7 +119,7 @@ static NSString* TAG = @"SOOMLA NdkGlue";
 }
 
 - (void)registerExceptionHandlerForKey:(NSString *)key withBlock:(void (^)(NSException *exception, NSDictionary *parameters, NSMutableDictionary *retParameters))exceptionHandler {
-    [[self callbackHandlers] setObject:exceptionHandler forKey:key];
+    [[self exceptionHandlers] setObject:exceptionHandler forKey:key];
 }
 
 - (void)logErrorWithTag:(NSString *)tag andMessage:(NSString *)message {
