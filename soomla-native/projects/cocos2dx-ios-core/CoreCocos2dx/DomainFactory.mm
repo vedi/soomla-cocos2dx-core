@@ -31,6 +31,7 @@
 - (void)dealloc {
     // Should never be called, but just here for clarity really.
     [_creators release];
+    [super dealloc];
 }
 
 - (void)registerCreatorForKey:(NSString *)key withBlock:(id (^)(NSDictionary *dict))creator {

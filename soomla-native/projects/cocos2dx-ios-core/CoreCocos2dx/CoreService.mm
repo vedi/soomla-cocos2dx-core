@@ -5,8 +5,6 @@
 #import "CoreService.h"
 #import "NdkGlue.h"
 #import "Reward.h"
-#import "DomainFactory.h"
-#import "UserProfileEventHandling.h"
 #import "SoomlaEventHandling.h"
 #import "CommonConsts.h"
 #import "BadgeReward.h"

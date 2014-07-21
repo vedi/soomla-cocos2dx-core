@@ -7,7 +7,7 @@
 #include "CCRef.h"
 #include "CCJsonHelper.h"
 #include "NdkGlue.h"
-#include "CCEventDispatcher.h"
+#include "CCSoomlaEventDispatcher.h"
 
 #ifdef COCOS2D_JAVASCRIPT
 #include "JSBinding.h"
@@ -71,7 +71,7 @@ namespace soomla {
 #ifdef COCOS2D_JAVASCRIPT
         Soomla::JSBinding::callCallback((cocos2d::__Dictionary *) dataToPass);
 #else
-        CCEventDispatcher::getInstance()->ndkCallback((cocos2d::__Dictionary *) dataToPass);
+        CCSoomlaEventDispatcher::getInstance()->ndkCallback((cocos2d::__Dictionary *) dataToPass);
 #endif
     }
 }
