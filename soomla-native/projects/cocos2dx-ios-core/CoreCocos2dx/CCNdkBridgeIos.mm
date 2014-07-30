@@ -4,7 +4,7 @@
 
 
 #include "CCNdkBridgeIos.h"
-#include "CCRef.h"
+#include "cocos2d.h"
 #include "CCJsonHelper.h"
 #include "NdkGlue.h"
 #include "CCSoomlaEventDispatcher.h"
@@ -67,11 +67,11 @@ namespace soomla {
     }
 
     void CCNdkBridgeIos::ndkCallback(json_t *jsonParams) {
-        cocos2d::Ref *dataToPass = CCJsonHelper::getCCObjectFromJson(jsonParams);
+        cocos2d::CCObject *dataToPass = CCJsonHelper::getCCObjectFromJson(jsonParams);
 #ifdef COCOS2D_JAVASCRIPT
-        Soomla::JSBinding::callCallback((cocos2d::__Dictionary *) dataToPass);
+        Soomla::JSBinding::callCallback((cocos2d::CCDictionary *) dataToPass);
 #else
-        CCSoomlaEventDispatcher::getInstance()->ndkCallback((cocos2d::__Dictionary *) dataToPass);
+        CCSoomlaEventDispatcher::getInstance()->ndkCallback((cocos2d::CCDictionary *) dataToPass);
 #endif
     }
 }

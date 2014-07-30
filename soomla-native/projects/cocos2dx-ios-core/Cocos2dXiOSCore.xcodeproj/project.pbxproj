@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D3313021977E21500D59A76 /* CCNdkBridgeIos.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312F21977E21500D59A76 /* CCNdkBridgeIos.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D3313031977E21500D59A76 /* CCNdkBridgeIos.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312F31977E21500D59A76 /* CCNdkBridgeIos.mm */; };
-		9D3313041977E21500D59A76 /* CommonConsts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312F41977E21500D59A76 /* CommonConsts.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D3313051977E21500D59A76 /* CommonConsts.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312F51977E21500D59A76 /* CommonConsts.mm */; };
-		9D3313061977E21500D59A76 /* CoreService.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312F61977E21500D59A76 /* CoreService.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D3313071977E21500D59A76 /* CoreService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312F71977E21500D59A76 /* CoreService.mm */; };
-		9D3313081977E21500D59A76 /* DomainFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312F81977E21500D59A76 /* DomainFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D3313091977E21500D59A76 /* DomainFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312F91977E21500D59A76 /* DomainFactory.mm */; };
-		9D33130A1977E21500D59A76 /* DomainHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312FA1977E21500D59A76 /* DomainHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D33130B1977E21500D59A76 /* DomainHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312FB1977E21500D59A76 /* DomainHelper.mm */; };
-		9D33130C1977E21500D59A76 /* NdkGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312FC1977E21500D59A76 /* NdkGlue.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D33130D1977E21500D59A76 /* NdkGlue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312FD1977E21500D59A76 /* NdkGlue.mm */; };
-		9D33130E1977E21500D59A76 /* ParamsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312FE1977E21500D59A76 /* ParamsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D33130F1977E21500D59A76 /* ParamsProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312FF1977E21500D59A76 /* ParamsProvider.mm */; };
-		9D3313101977E21500D59A76 /* ServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3313001977E21500D59A76 /* ServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D3313111977E21500D59A76 /* ServiceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3313011977E21500D59A76 /* ServiceManager.mm */; };
-		C0B3C5F3168C6D0C00161FAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3C5F2168C6D0C00161FAA /* Foundation.framework */; };
+		9DFC33ED19826F7000EAEDDC /* NdkGlue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312FD1977E21500D59A76 /* NdkGlue.mm */; };
+		9DFC33EE19826F7000EAEDDC /* ParamsProvider.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312FF1977E21500D59A76 /* ParamsProvider.mm */; };
+		9DFC33EF19826F7000EAEDDC /* DomainHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312FB1977E21500D59A76 /* DomainHelper.mm */; };
+		9DFC33F019826F7000EAEDDC /* DomainFactory.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312F91977E21500D59A76 /* DomainFactory.mm */; };
+		9DFC33F119826F7000EAEDDC /* CommonConsts.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312F51977E21500D59A76 /* CommonConsts.mm */; };
+		9DFC33F219826F7000EAEDDC /* ServiceManager.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3313011977E21500D59A76 /* ServiceManager.mm */; };
+		9DFC33F319826F7000EAEDDC /* CCNdkBridgeIos.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312F31977E21500D59A76 /* CCNdkBridgeIos.mm */; };
+		9DFC33F419826F7000EAEDDC /* CoreService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D3312F71977E21500D59A76 /* CoreService.mm */; };
+		9DFC33F619826F7000EAEDDC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3C5F2168C6D0C00161FAA /* Foundation.framework */; };
+		9DFC33F819826F7000EAEDDC /* CCNdkBridgeIos.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312F21977E21500D59A76 /* CCNdkBridgeIos.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DFC33F919826F7000EAEDDC /* NdkGlue.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312FC1977E21500D59A76 /* NdkGlue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DFC33FA19826F7000EAEDDC /* ServiceManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3313001977E21500D59A76 /* ServiceManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DFC33FB19826F7000EAEDDC /* ParamsProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312FE1977E21500D59A76 /* ParamsProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DFC33FC19826F7000EAEDDC /* DomainHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312FA1977E21500D59A76 /* DomainHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DFC33FD19826F7000EAEDDC /* DomainFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312F81977E21500D59A76 /* DomainFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DFC33FE19826F7000EAEDDC /* CommonConsts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312F41977E21500D59A76 /* CommonConsts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DFC33FF19826F7000EAEDDC /* CoreService.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D3312F61977E21500D59A76 /* CoreService.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,16 +44,16 @@
 		9D3312FF1977E21500D59A76 /* ParamsProvider.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ParamsProvider.mm; sourceTree = "<group>"; };
 		9D3313001977E21500D59A76 /* ServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceManager.h; sourceTree = "<group>"; };
 		9D3313011977E21500D59A76 /* ServiceManager.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ServiceManager.mm; sourceTree = "<group>"; };
-		C0B3C5EF168C6D0C00161FAA /* libCocos2dXiOSCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocos2dXiOSCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DFC340419826F7000EAEDDC /* libCocos2dXiOSCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocos2dXiOSCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B3C5F2168C6D0C00161FAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		C0B3C5EC168C6D0C00161FAA /* Frameworks */ = {
+		9DFC33F519826F7000EAEDDC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0B3C5F3168C6D0C00161FAA /* Foundation.framework in Frameworks */,
+				9DFC33F619826F7000EAEDDC /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +96,7 @@
 		C0B3C5F0168C6D0C00161FAA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C0B3C5EF168C6D0C00161FAA /* libCocos2dXiOSCore.a */,
+				9DFC340419826F7000EAEDDC /* libCocos2dXiOSCore.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,32 +112,32 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9D64AAD0190653C40091D664 /* Headers */ = {
+		9DFC33F719826F7000EAEDDC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D3313021977E21500D59A76 /* CCNdkBridgeIos.h in Headers */,
-				9D33130C1977E21500D59A76 /* NdkGlue.h in Headers */,
-				9D3313101977E21500D59A76 /* ServiceManager.h in Headers */,
-				9D33130E1977E21500D59A76 /* ParamsProvider.h in Headers */,
-				9D33130A1977E21500D59A76 /* DomainHelper.h in Headers */,
-				9D3313081977E21500D59A76 /* DomainFactory.h in Headers */,
-				9D3313041977E21500D59A76 /* CommonConsts.h in Headers */,
-				9D3313061977E21500D59A76 /* CoreService.h in Headers */,
+				9DFC33F819826F7000EAEDDC /* CCNdkBridgeIos.h in Headers */,
+				9DFC33F919826F7000EAEDDC /* NdkGlue.h in Headers */,
+				9DFC33FA19826F7000EAEDDC /* ServiceManager.h in Headers */,
+				9DFC33FB19826F7000EAEDDC /* ParamsProvider.h in Headers */,
+				9DFC33FC19826F7000EAEDDC /* DomainHelper.h in Headers */,
+				9DFC33FD19826F7000EAEDDC /* DomainFactory.h in Headers */,
+				9DFC33FE19826F7000EAEDDC /* CommonConsts.h in Headers */,
+				9DFC33FF19826F7000EAEDDC /* CoreService.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C0B3C5EE168C6D0C00161FAA /* Cocos2dXiOSCore */ = {
+		9DFC33EB19826F7000EAEDDC /* Cocos2dXiOSCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C0B3C5FD168C6D0C00161FAA /* Build configuration list for PBXNativeTarget "Cocos2dXiOSCore" */;
+			buildConfigurationList = 9DFC340119826F7000EAEDDC /* Build configuration list for PBXNativeTarget "Cocos2dXiOSCore" */;
 			buildPhases = (
-				C0B3C5EB168C6D0C00161FAA /* Sources */,
-				C0B3C5EC168C6D0C00161FAA /* Frameworks */,
-				9D64AAD0190653C40091D664 /* Headers */,
-				C09762A81900726F000A4403 /* ShellScript */,
+				9DFC33EC19826F7000EAEDDC /* Sources */,
+				9DFC33F519826F7000EAEDDC /* Frameworks */,
+				9DFC33F719826F7000EAEDDC /* Headers */,
+				9DFC340019826F7000EAEDDC /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -145,7 +145,7 @@
 			);
 			name = Cocos2dXiOSCore;
 			productName = SoomlaIOSStore;
-			productReference = C0B3C5EF168C6D0C00161FAA /* libCocos2dXiOSCore.a */;
+			productReference = 9DFC340419826F7000EAEDDC /* libCocos2dXiOSCore.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -169,13 +169,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C0B3C5EE168C6D0C00161FAA /* Cocos2dXiOSCore */,
+				9DFC33EB19826F7000EAEDDC /* Cocos2dXiOSCore */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		C09762A81900726F000A4403 /* ShellScript */ = {
+		9DFC340019826F7000EAEDDC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -191,35 +191,103 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		C0B3C5EB168C6D0C00161FAA /* Sources */ = {
+		9DFC33EC19826F7000EAEDDC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D33130D1977E21500D59A76 /* NdkGlue.mm in Sources */,
-				9D33130F1977E21500D59A76 /* ParamsProvider.mm in Sources */,
-				9D33130B1977E21500D59A76 /* DomainHelper.mm in Sources */,
-				9D3313091977E21500D59A76 /* DomainFactory.mm in Sources */,
-				9D3313051977E21500D59A76 /* CommonConsts.mm in Sources */,
-				9D3313111977E21500D59A76 /* ServiceManager.mm in Sources */,
-				9D3313031977E21500D59A76 /* CCNdkBridgeIos.mm in Sources */,
-				9D3313071977E21500D59A76 /* CoreService.mm in Sources */,
+				9DFC33ED19826F7000EAEDDC /* NdkGlue.mm in Sources */,
+				9DFC33EE19826F7000EAEDDC /* ParamsProvider.mm in Sources */,
+				9DFC33EF19826F7000EAEDDC /* DomainHelper.mm in Sources */,
+				9DFC33F019826F7000EAEDDC /* DomainFactory.mm in Sources */,
+				9DFC33F119826F7000EAEDDC /* CommonConsts.mm in Sources */,
+				9DFC33F219826F7000EAEDDC /* ServiceManager.mm in Sources */,
+				9DFC33F319826F7000EAEDDC /* CCNdkBridgeIos.mm in Sources */,
+				9DFC33F419826F7000EAEDDC /* CoreService.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		9DFC340219826F7000EAEDDC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SoomlaIOSStore.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOS2D_DEBUG=1",
+					CC_TARGET_OS_IPHONE,
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../../../../../cocos2dx\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/include\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/platform/third_party/ios\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/platform/ios\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/platform/ios/Simulation\"",
+					"$(SRCROOT)/../../../../../external/jansson",
+					"$(SRCROOT)/../../compilations/ios/headers/ios-core/**",
+					"$(SRCROOT)/../../../Soomla/**",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = headers/private;
+				PRODUCT_NAME = Cocos2dXiOSCore;
+				PUBLIC_HEADERS_FOLDER_PATH = headers/public;
+				SKIP_INSTALL = YES;
+				SYMROOT = out;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		9DFC340319826F7000EAEDDC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SoomlaIOSStore.dst;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = CC_TARGET_OS_IPHONE;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"$(SRCROOT)/../../../../../cocos2dx\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/include\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/kazmath/include\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/platform/third_party/ios\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/platform/ios\"",
+					"\"$(SRCROOT)/../../../../../cocos2dx/platform/ios/Simulation\"",
+					"$(SRCROOT)/../../../../../external/jansson",
+					"$(SRCROOT)/../../compilations/ios/headers/ios-core/**",
+					"$(SRCROOT)/../../../Soomla/**",
+				);
+				LIBRARY_SEARCH_PATHS = "";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRIVATE_HEADERS_FOLDER_PATH = headers/private;
+				PRODUCT_NAME = Cocos2dXiOSCore;
+				PUBLIC_HEADERS_FOLDER_PATH = headers/public;
+				SKIP_INSTALL = YES;
+				SYMROOT = out;
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
 		C0B3C5FB168C6D0C00161FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREFIX_HEADER = Prefix.pch;
@@ -241,13 +309,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LIBRARY = "libstdc++";
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
-				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_PREFIX_HEADER = Prefix.pch;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -258,90 +325,23 @@
 			};
 			name = Release;
 		};
-		C0B3C5FE168C6D0C00161FAA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/SoomlaIOSStore.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"COCOS2D_DEBUG=1",
-					CC_TARGET_OS_IPHONE,
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../../../cocos",
-					"$(SRCROOT)/../../../../../cocos/base",
-					"$(SRCROOT)/../../../../../cocos/2d",
-					"$(SRCROOT)/../../../../../cocos/platform/ios",
-					"$(SRCROOT)/../../../../../cocos/platform/ios/Simulation",
-					"$(SRCROOT)/../../../../../external/jansson",
-					"$(SRCROOT)/../../compilations/ios/headers/ios-core/**",
-					"$(SRCROOT)/../../../Soomla/**",
-				);
-				LIBRARY_SEARCH_PATHS = "";
-				LINK_WITH_STANDARD_LIBRARIES = NO;
-				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = headers/private;
-				PRODUCT_NAME = Cocos2dXiOSCore;
-				PUBLIC_HEADERS_FOLDER_PATH = headers/public;
-				SKIP_INSTALL = YES;
-				SYMROOT = out;
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Debug;
-		};
-		C0B3C5FF168C6D0C00161FAA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DSTROOT = /tmp/SoomlaIOSStore.dst;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = CC_TARGET_OS_IPHONE;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(SRCROOT)/../../../../../cocos",
-					"$(SRCROOT)/../../../../../cocos/base",
-					"$(SRCROOT)/../../../../../cocos/2d",
-					"$(SRCROOT)/../../../../../cocos/platform/ios",
-					"$(SRCROOT)/../../../../../cocos/platform/ios/Simulation",
-					"$(SRCROOT)/../../../../../external/jansson",
-					"$(SRCROOT)/../../compilations/ios/headers/ios-core/**",
-					"$(SRCROOT)/../../../Soomla/**",
-				);
-				LIBRARY_SEARCH_PATHS = "";
-				LINK_WITH_STANDARD_LIBRARIES = NO;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "-ObjC";
-				PRIVATE_HEADERS_FOLDER_PATH = headers/private;
-				PRODUCT_NAME = Cocos2dXiOSCore;
-				PUBLIC_HEADERS_FOLDER_PATH = headers/public;
-				SKIP_INSTALL = YES;
-				SYMROOT = out;
-				WRAPPER_EXTENSION = framework;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9DFC340119826F7000EAEDDC /* Build configuration list for PBXNativeTarget "Cocos2dXiOSCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DFC340219826F7000EAEDDC /* Debug */,
+				9DFC340319826F7000EAEDDC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C0B3C5E9168C6D0C00161FAA /* Build configuration list for PBXProject "Cocos2dXiOSCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C0B3C5FB168C6D0C00161FAA /* Debug */,
 				C0B3C5FC168C6D0C00161FAA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C0B3C5FD168C6D0C00161FAA /* Build configuration list for PBXNativeTarget "Cocos2dXiOSCore" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C0B3C5FE168C6D0C00161FAA /* Debug */,
-				C0B3C5FF168C6D0C00161FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
