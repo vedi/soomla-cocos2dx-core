@@ -11,6 +11,7 @@
 #import "RandomReward.h"
 #import "SequenceReward.h"
 #import "DomainHelper.h"
+#import "RewardStorage.h"
 
 @interface CoreService ()
 @end
@@ -51,17 +52,38 @@
     [ndkGlue registerCallHandlerForKey:@"CCCoreService::init" withBlock:^(NSDictionary *parameters, NSMutableDictionary *retParameters) {
         [[CoreService sharedCoreService] init];
     }];
+    [ndkGlue registerCallHandlerForKey:@"CCCoreService::getTimesGiven" withBlock:^(NSDictionary *parameters, NSMutableDictionary *retParameters) {
+        NSDictionary *rewardDict = parameters[@"reward"];
+        int res = [RewardStorage getTimesGivenForReward:[Reward fromDictionary:rewardDict]];
+        retParameters[@"return"] = @(res);
+    }];
+    [ndkGlue registerCallHandlerForKey:@"CCCoreService::setRewardStatus" withBlock:^(NSDictionary *parameters, NSMutableDictionary *retParameters) {
+        NSDictionary *rewardDict = parameters[@"reward"];
+        bool give = [parameters[@"give"] boolValue];
+        bool notify = [parameters[@"notify"] boolValue];
+        [RewardStorage setStatus:give forReward:[Reward fromDictionary:rewardDict] andNotify:notify];
+    }];
+    [ndkGlue registerCallHandlerForKey:@"CCCoreService::getLastSeqIdxGiven" withBlock:^(NSDictionary *parameters, NSMutableDictionary *retParameters) {
+        NSDictionary *rewardDict = parameters[@"reward"];
+        int res = [RewardStorage getLastSeqIdxGivenForReward:(SequenceReward *) [Reward fromDictionary:rewardDict]];
+        retParameters[@"return"] = @(res);
+    }];
+    [ndkGlue registerCallHandlerForKey:@"CCCoreService::setLastSeqIdxGiven" withBlock:^(NSDictionary *parameters, NSMutableDictionary *retParameters) {
+        NSDictionary *rewardDict = parameters[@"reward"];
+        int idx = [parameters[@"idx"] intValue];
+        [RewardStorage setLastSeqIdxGiven:idx ForReward:(SequenceReward *) [Reward fromDictionary:rewardDict]];
+    }];
 
     /* -= Callback handlers =- */
     [ndkGlue registerCallbackHandlerForKey:EVENT_REWARD_GIVEN withBlock:^(NSNotification *notification, NSMutableDictionary *parameters) {
-        [parameters setObject:@"com.soomla.events.RewardGivenEvent" forKey:@"method"];
-        Reward *reward = [notification.userInfo objectForKey:DICT_ELEMENT_REWARD];
-        [parameters setObject:[reward toDictionary] forKey:@"reward"];
+        parameters[@"method"] = @"com.soomla.events.RewardGivenEvent";
+        Reward *reward = (notification.userInfo)[DICT_ELEMENT_REWARD];
+        parameters[@"reward"] = [reward toDictionary];
     }];
     [ndkGlue registerCallbackHandlerForKey:EVENT_REWARD_TAKEN withBlock:^(NSNotification *notification, NSMutableDictionary *parameters) {
-        [parameters setObject:@"com.soomla.events.RewardTakenEvent" forKey:@"method"];
-        Reward *reward = [notification.userInfo objectForKey:DICT_ELEMENT_REWARD];
-        [parameters setObject:[reward toDictionary] forKey:@"reward"];
+        parameters[@"method"] = @"com.soomla.events.RewardTakenEvent";
+        Reward *reward = (notification.userInfo)[DICT_ELEMENT_REWARD];
+        parameters[@"reward"] = [reward toDictionary];
     }];
 
 }
