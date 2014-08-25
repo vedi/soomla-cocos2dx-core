@@ -36,16 +36,21 @@
 }
 
 - (void)registerType:(NSString *)type withClassName:(NSString *)className {
+    Class clazz = NSClassFromString(className);
+    id (^creator)(NSDictionary *) = ^id(NSDictionary *dict) {
+        return (id) [clazz performSelector:@selector(fromDictionary:) withObject:dict];
+    };
+
+    [self registerType:type withClassName:className andBlock:creator];
+}
+
+- (void)registerType:(NSString *)type withClassName:(NSString *)className andBlock:(id (^)(NSDictionary *dict))creator {
     self.classType[className] = type;
     self.typeClass[type] = className;
 
-    Class clazz = NSClassFromString(className);
-
-    id (^creator)(NSDictionary *) = ^id(NSDictionary *dict) {
-        return [clazz performSelector:@selector(fromDictionary:) withObject:dict];
-    };
     [[DomainFactory sharedDomainFactory] registerCreatorForKey:type withBlock:creator];
 }
+
 
 - (id)getDomainsFromDictList:(NSArray *)dictList {
     if (dictList == nil) {
