@@ -1,5 +1,6 @@
 package com.soomla.cocos2dx.common;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -64,7 +65,7 @@ public class DomainHelper {
         return domains;
     }
 
-    public <T>List<JSONObject> getJsonObjectListFromDomains(List<T> domains) {
+    public <T> JSONArray getJsonObjectListFromDomains(List<T> domains) {
         if (domains == null) {
             return null;
         }
@@ -74,7 +75,7 @@ public class DomainHelper {
             jsonObjectList.add(domainToJsonObject(domain));
         }
 
-        return jsonObjectList;
+        return new JSONArray(jsonObjectList);
     }
 
     public JSONObject domainToJsonObject(Object domain) {
