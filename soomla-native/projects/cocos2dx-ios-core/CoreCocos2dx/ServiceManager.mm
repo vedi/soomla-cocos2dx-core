@@ -33,7 +33,7 @@
         [self registerService:[CoreService sharedCoreService]];
 
         [[NdkGlue sharedInstance] registerCallHandlerForKey:@"CCServiceManager::setCommonParams" withBlock:^(NSDictionary *parameters, NSMutableDictionary *retParameters) {
-            NSDictionary *commonParameters = (NSDictionary *) [parameters objectForKey:@"params"];
+            NSDictionary *commonParameters = (NSDictionary *) parameters[@"params"];
             [[ParamsProvider sharedParamsProvider] setParams: commonParameters withKey: @"common"];
         }];
     }
