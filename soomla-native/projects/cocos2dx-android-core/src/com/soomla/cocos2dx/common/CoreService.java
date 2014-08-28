@@ -6,6 +6,7 @@ import com.soomla.rewards.BadgeReward;
 import com.soomla.rewards.RandomReward;
 import com.soomla.rewards.Reward;
 import com.soomla.rewards.SequenceReward;
+import com.soomla.Schedule;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -38,6 +39,9 @@ public class CoreService extends AbstractSoomlaService {
 
     public CoreService() {
         coreEventHandlerBridge = new CoreEventHandlerBridge();
+
+        DomainHelper.getInstance().registerTypeWithClassName(CommonConsts.JSON_JSON_TYPE_SCHEDULE, Schedule.class);
+        DomainHelper.getInstance().registerTypeWithClassName(CommonConsts.JSON_JSON_TYPE_DATE_TIME_RANGE, Schedule.DateTimeRange.class);
 
         final DomainFactory domainFactory = DomainFactory.getInstance();
 

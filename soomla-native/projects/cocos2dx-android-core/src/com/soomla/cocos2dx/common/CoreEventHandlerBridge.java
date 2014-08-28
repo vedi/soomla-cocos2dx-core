@@ -1,6 +1,7 @@
 package com.soomla.cocos2dx.common;
 
 import android.opengl.GLSurfaceView;
+
 import com.soomla.BusProvider;
 import com.soomla.events.RewardGivenEvent;
 import com.soomla.events.RewardTakenEvent;
@@ -27,7 +28,7 @@ public class CoreEventHandlerBridge {
                 try {
                     JSONObject parameters = new JSONObject();
                     parameters.put("method", CommonConsts.EVENT_REWARD_GIVEN);
-                    parameters.put("reward", rewardGivenEvent.Reward.toJSONObject());
+                    parameters.put("reward", DomainHelper.getInstance().domainToJsonObject(rewardGivenEvent.Reward));
                     NdkGlue.getInstance().sendMessageWithParameters(parameters);
                 } catch (JSONException e) {
                     throw new IllegalStateException(e);
@@ -44,7 +45,7 @@ public class CoreEventHandlerBridge {
                 try {
                     JSONObject parameters = new JSONObject();
                     parameters.put("method", CommonConsts.EVENT_REWARD_TAKEN);
-                    parameters.put("reward", rewardTakenEvent.Reward.toJSONObject());
+                    parameters.put("reward", DomainHelper.getInstance().domainToJsonObject(rewardTakenEvent.Reward));
                     NdkGlue.getInstance().sendMessageWithParameters(parameters);
                 } catch (JSONException e) {
                     throw new IllegalStateException(e);

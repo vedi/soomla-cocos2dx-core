@@ -12,6 +12,7 @@
 #import "SequenceReward.h"
 #import "DomainHelper.h"
 #import "RewardStorage.h"
+#import "Schedule.h"
 
 @interface CoreService ()
 @end
@@ -95,6 +96,10 @@
                                       withClassName:NSStringFromClass([RandomReward class])];
     [[DomainHelper sharedDomainHelper] registerType:(NSString *) JSON_JSON_TYPE_SEQUENCE
                                       withClassName:NSStringFromClass([SequenceReward class])];
+    [[DomainHelper sharedDomainHelper] registerType:(NSString *) JSON_JSON_TYPE_SCHEDULE
+                                      withClassName:NSStringFromClass([Schedule class])];
+    [[DomainHelper sharedDomainHelper] registerType:(NSString *) JSON_JSON_TYPE_DATE_TIME_RANGE
+                                      withClassName:NSStringFromClass([DateTimeRange class])];
 }
 
 @end
