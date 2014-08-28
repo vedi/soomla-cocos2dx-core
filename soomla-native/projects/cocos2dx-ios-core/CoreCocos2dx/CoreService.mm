@@ -78,12 +78,12 @@
     [ndkGlue registerCallbackHandlerForKey:EVENT_REWARD_GIVEN withBlock:^(NSNotification *notification, NSMutableDictionary *parameters) {
         parameters[@"method"] = @"com.soomla.events.RewardGivenEvent";
         Reward *reward = (notification.userInfo)[DICT_ELEMENT_REWARD];
-        parameters[@"reward"] = [reward toDictionary];
+        parameters[@"reward"] = [[DomainHelper sharedDomainHelper] domainToDict:reward];
     }];
     [ndkGlue registerCallbackHandlerForKey:EVENT_REWARD_TAKEN withBlock:^(NSNotification *notification, NSMutableDictionary *parameters) {
         parameters[@"method"] = @"com.soomla.events.RewardTakenEvent";
         Reward *reward = (notification.userInfo)[DICT_ELEMENT_REWARD];
-        parameters[@"reward"] = [reward toDictionary];
+        parameters[@"reward"] = [[DomainHelper sharedDomainHelper] domainToDict:reward];
     }];
 
 }
