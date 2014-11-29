@@ -1,5 +1,4 @@
 
-
 #ifndef __CCProfileNdkBridgeIos_H_
 #define __CCProfileNdkBridgeIos_H_
 
