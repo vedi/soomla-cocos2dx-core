@@ -22,6 +22,14 @@ namespace soomla {
     class CCSoomla {
     public:
         static void initialize(const char *soomlaSecret);
+
+        /*
+         * Initializes SOOMLA Core
+         *
+         * @param soomlaSecret a key using to encrypt secure user data.
+         * @param databaseType type of KeyValueDatabase (iOS-only): 0 - SQLite (recommended), 1 - NSUserDefaults (for AppleTV)
+         */
+        static void initialize(const char *soomlaSecret, int databaseType);
     };
 }
 

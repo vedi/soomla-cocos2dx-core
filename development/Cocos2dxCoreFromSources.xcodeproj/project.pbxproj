@@ -90,7 +90,6 @@
 		9D4B31991AC009200083C869 /* CCKeyValueStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F8B27ED119B9E8C90094A771 /* CCKeyValueStorage.cpp */; };
 		9D4B319A1AC009200083C869 /* CCRandomReward.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D4101441978CFAD00907FA8 /* CCRandomReward.cpp */; };
 		9D4B319B1AC009200083C869 /* CCSoomlaEntity.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 372B74257254F43D38DF97CA /* CCSoomlaEntity.cpp */; };
-		9D4B319C1AC009200083C869 /* KeyValDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63D05119B0EE220054EA87 /* KeyValDatabase.m */; };
 		9D4B319D1AC009200083C869 /* NdkGlue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D63D03719B0EDB90054EA87 /* NdkGlue.mm */; };
 		9D4B319E1AC009200083C869 /* CCNativeRewardStorage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865E1FF1AB0AF65006DA7E2 /* CCNativeRewardStorage.cpp */; };
 		9D4B319F1AC009200083C869 /* JSONConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63D04F19B0EE220054EA87 /* JSONConsts.m */; };
@@ -108,7 +107,6 @@
 		9D4B31AD1AC009200083C869 /* SequenceReward.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D06419B0EE220054EA87 /* SequenceReward.h */; };
 		9D4B31AE1AC009200083C869 /* Soomla.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D06819B0EE220054EA87 /* Soomla.h */; };
 		9D4B31AF1AC009200083C869 /* KeyValueStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D05219B0EE220054EA87 /* KeyValueStorage.h */; };
-		9D4B31B11AC009200083C869 /* KeyValDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D05019B0EE220054EA87 /* KeyValDatabase.h */; };
 		9D4B31B21AC009200083C869 /* CCDomainHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D4101301978CFAD00907FA8 /* CCDomainHelper.h */; };
 		9D4B31B31AC009200083C869 /* SoomlaEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D05619B0EE220054EA87 /* SoomlaEncryptor.h */; };
 		9D4B31B41AC009200083C869 /* CCBridgelessKeyValueStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = F89F71F31AB187DB000ECC23 /* CCBridgelessKeyValueStorage.h */; };
@@ -169,8 +167,6 @@
 		9D63D04719B0EDB90054EA87 /* NdkGlue.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9D63D03719B0EDB90054EA87 /* NdkGlue.mm */; };
 		9D63D07619B0EE220054EA87 /* JSONConsts.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D04E19B0EE220054EA87 /* JSONConsts.h */; };
 		9D63D07719B0EE220054EA87 /* JSONConsts.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63D04F19B0EE220054EA87 /* JSONConsts.m */; };
-		9D63D07819B0EE220054EA87 /* KeyValDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D05019B0EE220054EA87 /* KeyValDatabase.h */; };
-		9D63D07919B0EE220054EA87 /* KeyValDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63D05119B0EE220054EA87 /* KeyValDatabase.m */; };
 		9D63D07A19B0EE220054EA87 /* KeyValueStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D05219B0EE220054EA87 /* KeyValueStorage.h */; };
 		9D63D07B19B0EE220054EA87 /* KeyValueStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63D05319B0EE220054EA87 /* KeyValueStorage.m */; };
 		9D63D07C19B0EE220054EA87 /* RewardStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D05419B0EE220054EA87 /* RewardStorage.h */; };
@@ -205,11 +201,19 @@
 		9D63D09919B0EE220054EA87 /* DictionaryFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D63D07419B0EE220054EA87 /* DictionaryFactory.h */; };
 		9D63D09A19B0EE220054EA87 /* DictionaryFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D63D07519B0EE220054EA87 /* DictionaryFactory.m */; };
 		B2FA802E3365C440A8C2CE14 /* CCSoomlaConfigBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2FA8254C685A34B3B081061 /* CCSoomlaConfigBuilder.cpp */; };
+		B2FA82ADF6023A24E3A21B8F /* UserDefaultsDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FA865394F9B07B6022A754 /* UserDefaultsDatabase.m */; };
+		B2FA8301884708A29DBFE462 /* KeyValueDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FA8E0DFFD1C13AB48B990B /* KeyValueDatabase.m */; };
 		B2FA84DCA2FD895A848B08A0 /* CCSoomlaConfigBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2FA8254C685A34B3B081061 /* CCSoomlaConfigBuilder.cpp */; };
 		B2FA86C2856A1BAF91591F20 /* CCSoomlaConfigBuilder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B2FA8254C685A34B3B081061 /* CCSoomlaConfigBuilder.cpp */; };
 		B2FA8763981B0B5D263E6DF1 /* CCSoomlaConfigBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FA89D0A8AF2688ED2003E4 /* CCSoomlaConfigBuilder.h */; };
+		B2FA8764B16E8354976C5BED /* KeyValueDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FA87D9FE87945FD3804FFF /* KeyValueDatabase.h */; };
+		B2FA88E338A049F960BE2910 /* SQLiteDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FA82648631B4291D3B5237 /* SQLiteDatabase.h */; };
 		B2FA8B2E47494837381F1791 /* CCSoomlaConfigBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FA89D0A8AF2688ED2003E4 /* CCSoomlaConfigBuilder.h */; };
+		B2FA8BDDADB7B88098469167 /* UserDefaultsDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FA8E98889803F52C80D14D /* UserDefaultsDatabase.h */; };
+		B2FA8C47284113127953A982 /* SQLiteDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FA800FA34B288DB3E839BB /* SQLiteDatabase.m */; };
 		B2FA8E732776A9A79B96F9CD /* CCSoomlaConfigBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FA89D0A8AF2688ED2003E4 /* CCSoomlaConfigBuilder.h */; };
+		B2FA8F0BCADF11B55F81E02E /* KeyValueDatabase+DatabaseSelector.h in Headers */ = {isa = PBXBuildFile; fileRef = B2FA8938E303EE14233BB3FD /* KeyValueDatabase+DatabaseSelector.h */; };
+		B2FA8FA7BCB1E97F23AE4436 /* KeyValueDatabase+DatabaseSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = B2FA8A4A37B2BE291C24BDC1 /* KeyValueDatabase+DatabaseSelector.m */; };
 		C0B3C5F3168C6D0C00161FAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0B3C5F2168C6D0C00161FAA /* Foundation.framework */; };
 		F861D66719BF6192008834EF /* Cocos2dxCore.h in Headers */ = {isa = PBXBuildFile; fileRef = F861D66619BF6192008834EF /* Cocos2dxCore.h */; };
 		F865E1AE1AB05541006DA7E2 /* CCSoomla.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F865E1AD1AB05541006DA7E2 /* CCSoomla.cpp */; };
@@ -339,8 +343,6 @@
 		9D63D03719B0EDB90054EA87 /* NdkGlue.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NdkGlue.mm; sourceTree = "<group>"; };
 		9D63D04E19B0EE220054EA87 /* JSONConsts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONConsts.h; sourceTree = "<group>"; };
 		9D63D04F19B0EE220054EA87 /* JSONConsts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONConsts.m; sourceTree = "<group>"; };
-		9D63D05019B0EE220054EA87 /* KeyValDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValDatabase.h; sourceTree = "<group>"; };
-		9D63D05119B0EE220054EA87 /* KeyValDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValDatabase.m; sourceTree = "<group>"; };
 		9D63D05219B0EE220054EA87 /* KeyValueStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueStorage.h; sourceTree = "<group>"; };
 		9D63D05319B0EE220054EA87 /* KeyValueStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueStorage.m; sourceTree = "<group>"; };
 		9D63D05419B0EE220054EA87 /* RewardStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RewardStorage.h; sourceTree = "<group>"; };
@@ -374,8 +376,16 @@
 		9D63D07219B0EE220054EA87 /* SoomlaUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoomlaUtils.m; sourceTree = "<group>"; };
 		9D63D07419B0EE220054EA87 /* DictionaryFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DictionaryFactory.h; sourceTree = "<group>"; };
 		9D63D07519B0EE220054EA87 /* DictionaryFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DictionaryFactory.m; sourceTree = "<group>"; };
+		B2FA800FA34B288DB3E839BB /* SQLiteDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteDatabase.m; sourceTree = "<group>"; };
 		B2FA8254C685A34B3B081061 /* CCSoomlaConfigBuilder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCSoomlaConfigBuilder.cpp; sourceTree = "<group>"; };
+		B2FA82648631B4291D3B5237 /* SQLiteDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteDatabase.h; sourceTree = "<group>"; };
+		B2FA865394F9B07B6022A754 /* UserDefaultsDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDefaultsDatabase.m; sourceTree = "<group>"; };
+		B2FA87D9FE87945FD3804FFF /* KeyValueDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyValueDatabase.h; sourceTree = "<group>"; };
+		B2FA8938E303EE14233BB3FD /* KeyValueDatabase+DatabaseSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeyValueDatabase+DatabaseSelector.h"; sourceTree = "<group>"; };
 		B2FA89D0A8AF2688ED2003E4 /* CCSoomlaConfigBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCSoomlaConfigBuilder.h; sourceTree = "<group>"; };
+		B2FA8A4A37B2BE291C24BDC1 /* KeyValueDatabase+DatabaseSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KeyValueDatabase+DatabaseSelector.m"; sourceTree = "<group>"; };
+		B2FA8E0DFFD1C13AB48B990B /* KeyValueDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyValueDatabase.m; sourceTree = "<group>"; };
+		B2FA8E98889803F52C80D14D /* UserDefaultsDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDefaultsDatabase.h; sourceTree = "<group>"; };
 		C0B3C5EF168C6D0C00161FAA /* libCocos2dxCoreFromSources.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCocos2dxCoreFromSources.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0B3C5F2168C6D0C00161FAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F861D66619BF6192008834EF /* Cocos2dxCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cocos2dxCore.h; sourceTree = "<group>"; };
@@ -569,14 +579,13 @@
 			children = (
 				9D63D04E19B0EE220054EA87 /* JSONConsts.h */,
 				9D63D04F19B0EE220054EA87 /* JSONConsts.m */,
-				9D63D05019B0EE220054EA87 /* KeyValDatabase.h */,
-				9D63D05119B0EE220054EA87 /* KeyValDatabase.m */,
 				9D63D05219B0EE220054EA87 /* KeyValueStorage.h */,
 				9D63D05319B0EE220054EA87 /* KeyValueStorage.m */,
 				9D63D05419B0EE220054EA87 /* RewardStorage.h */,
 				9D63D05519B0EE220054EA87 /* RewardStorage.m */,
 				9D63D05619B0EE220054EA87 /* SoomlaEncryptor.h */,
 				9D63D05719B0EE220054EA87 /* SoomlaEncryptor.m */,
+				B2FA83E8B6C5FC1DAFD8198B /* storages */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -614,6 +623,21 @@
 				9D63D07519B0EE220054EA87 /* DictionaryFactory.m */,
 			);
 			path = util;
+			sourceTree = "<group>";
+		};
+		B2FA83E8B6C5FC1DAFD8198B /* storages */ = {
+			isa = PBXGroup;
+			children = (
+				B2FA82648631B4291D3B5237 /* SQLiteDatabase.h */,
+				B2FA800FA34B288DB3E839BB /* SQLiteDatabase.m */,
+				B2FA87D9FE87945FD3804FFF /* KeyValueDatabase.h */,
+				B2FA8E0DFFD1C13AB48B990B /* KeyValueDatabase.m */,
+				B2FA8E98889803F52C80D14D /* UserDefaultsDatabase.h */,
+				B2FA865394F9B07B6022A754 /* UserDefaultsDatabase.m */,
+				B2FA8938E303EE14233BB3FD /* KeyValueDatabase+DatabaseSelector.h */,
+				B2FA8A4A37B2BE291C24BDC1 /* KeyValueDatabase+DatabaseSelector.m */,
+			);
+			path = storages;
 			sourceTree = "<group>";
 		};
 		C0B3C5E4168C6D0C00161FAA = {
@@ -677,7 +701,6 @@
 				9D4B31AD1AC009200083C869 /* SequenceReward.h in Headers */,
 				9D4B31AE1AC009200083C869 /* Soomla.h in Headers */,
 				9D4B31AF1AC009200083C869 /* KeyValueStorage.h in Headers */,
-				9D4B31B11AC009200083C869 /* KeyValDatabase.h in Headers */,
 				9D4B31B21AC009200083C869 /* CCDomainHelper.h in Headers */,
 				9D4B31B31AC009200083C869 /* SoomlaEncryptor.h in Headers */,
 				9D4B31B41AC009200083C869 /* CCBridgelessKeyValueStorage.h in Headers */,
@@ -740,7 +763,6 @@
 				9D63D08A19B0EE220054EA87 /* SequenceReward.h in Headers */,
 				9D63D08E19B0EE220054EA87 /* Soomla.h in Headers */,
 				9D63D07A19B0EE220054EA87 /* KeyValueStorage.h in Headers */,
-				9D63D07819B0EE220054EA87 /* KeyValDatabase.h in Headers */,
 				9D4101551978CFAD00907FA8 /* CCDomainHelper.h in Headers */,
 				9D63D07E19B0EE220054EA87 /* SoomlaEncryptor.h in Headers */,
 				F89F71F51AB187DB000ECC23 /* CCBridgelessKeyValueStorage.h in Headers */,
@@ -784,6 +806,10 @@
 				9D63D03E19B0EDB90054EA87 /* CommonConsts.h in Headers */,
 				F89F721B1AB192D9000ECC23 /* CCNativeCoreBridge.h in Headers */,
 				B2FA8B2E47494837381F1791 /* CCSoomlaConfigBuilder.h in Headers */,
+				B2FA88E338A049F960BE2910 /* SQLiteDatabase.h in Headers */,
+				B2FA8764B16E8354976C5BED /* KeyValueDatabase.h in Headers */,
+				B2FA8BDDADB7B88098469167 /* UserDefaultsDatabase.h in Headers */,
+				B2FA8F0BCADF11B55F81E02E /* KeyValueDatabase+DatabaseSelector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -955,7 +981,6 @@
 				9D4B31991AC009200083C869 /* CCKeyValueStorage.cpp in Sources */,
 				9D4B319A1AC009200083C869 /* CCRandomReward.cpp in Sources */,
 				9D4B319B1AC009200083C869 /* CCSoomlaEntity.cpp in Sources */,
-				9D4B319C1AC009200083C869 /* KeyValDatabase.m in Sources */,
 				9D4B319D1AC009200083C869 /* NdkGlue.mm in Sources */,
 				9D4B31E71AC00A440083C869 /* JSBinding.cpp in Sources */,
 				9D4B319E1AC009200083C869 /* CCNativeRewardStorage.cpp in Sources */,
@@ -1014,7 +1039,6 @@
 				F8B27ED319B9E8C90094A771 /* CCKeyValueStorage.cpp in Sources */,
 				9D4101671978CFAD00907FA8 /* CCRandomReward.cpp in Sources */,
 				372B7E556799F8D93570725F /* CCSoomlaEntity.cpp in Sources */,
-				9D63D07919B0EE220054EA87 /* KeyValDatabase.m in Sources */,
 				9D63D04719B0EDB90054EA87 /* NdkGlue.mm in Sources */,
 				F865E2011AB0AF65006DA7E2 /* CCNativeRewardStorage.cpp in Sources */,
 				9D63D07719B0EE220054EA87 /* JSONConsts.m in Sources */,
@@ -1022,6 +1046,10 @@
 				372B790F7E37797D2E10ED65 /* CCSoomlaUtils.cpp in Sources */,
 				372B7FBE9869CD7B1B70ED0E /* CCRewardStorage.cpp in Sources */,
 				B2FA802E3365C440A8C2CE14 /* CCSoomlaConfigBuilder.cpp in Sources */,
+				B2FA8C47284113127953A982 /* SQLiteDatabase.m in Sources */,
+				B2FA8301884708A29DBFE462 /* KeyValueDatabase.m in Sources */,
+				B2FA82ADF6023A24E3A21B8F /* UserDefaultsDatabase.m in Sources */,
+				B2FA8FA7BCB1E97F23AE4436 /* KeyValueDatabase+DatabaseSelector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

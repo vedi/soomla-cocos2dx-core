@@ -56,7 +56,7 @@
     /* -= Call handlers =- */
     [ndkGlue registerCallHandlerForKey:@"CCSoomla::initialize" withBlock:^(NSDictionary *parameters, NSMutableDictionary *retParameters) {
         NSString *soomlaSecret = parameters[@"soomlaSecret"];
-        [Soomla initializeWithSecret:soomlaSecret];
+        [Soomla initializeWithSecret:soomlaSecret andDatabaseType:(KeyValueDatabaseType)[parameters[@"databaseType"] integerValue]];
     }];
     [ndkGlue registerCallHandlerForKey:@"CCNativeRewardStorage::getTimesGiven" withBlock:^(NSDictionary *parameters, NSMutableDictionary *retParameters) {
         NSString *rewardId = parameters[@"reward"];
